@@ -85,18 +85,19 @@
             android:layout_margin="5dp"
             android:elevation="20dp"
             app:cardCornerRadius="4dp"
+            app:cardBackgroundColor="@color/Medium_background"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="8">
 
             <RelativeLayout
-                android:background="@color/light_background"
+                android:background="@color/Medium_background"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv"
-                    android:background="#ccff90"
+                    android:background="@color/Medium_background"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
 
@@ -108,6 +109,7 @@
             android:layout_marginBottom="15dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
             android:elevation="20dp"
             app:cardCornerRadius="10dp"
             android:layout_width="match_parent"
@@ -121,9 +123,9 @@
                 android:layout_gravity="center"
                 android:background="@color/Dark_background"
                 android:gravity="center"
-                android:text="Add Split"
                 android:onClick="addSplit"
-                android:textSize="24sp"
+                android:text="Add Split"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
         </androidx.cardview.widget.CardView>

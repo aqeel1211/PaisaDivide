@@ -102,7 +102,7 @@
                 android:gravity="center"
                 android:text="Settled"
                 android:onClick="paymentSettled"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
         </androidx.cardview.widget.CardView>
@@ -126,7 +126,7 @@
                 android:gravity="center"
                 android:text="Back"
                 android:onClick="onBack"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
         </androidx.cardview.widget.CardView>
