@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.Manag
 
         contacts = new ArrayList<>();
 
-        contacts.add(new Data(R.drawable.ic_launcher_foreground, "Usama Zafar" , "400"));
         contacts.add(new Data(R.drawable.ic_launcher_foreground, "Usama Rasheed" , "350"));
         contacts.add(new Data(R.drawable.ic_launcher_foreground, "Aqeel Ijaz" , "700"));
 

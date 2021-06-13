@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "540421841746",
+    "project_id": "paisadivide",
+    "storage_bucket": "paisadivide.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540421841746:android:8d6ae04435b5f00b7fd08b",
+        "android_client_info": {
+          "package_name": "com.example.paisadivide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540421841746-ooqv2ngbqff99hots5plob5lcsb0m2oh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDROOdLKQytyE6sScT_UrZRKdihk4OIWHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540421841746-ooqv2ngbqff99hots5plob5lcsb0m2oh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
