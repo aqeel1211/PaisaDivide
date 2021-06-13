@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -46,5 +48,10 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.Manag
     @Override
     public void onItemEditClick(Data editItem) {
 
+    }
+
+    public void addSplit(View v){
+        Intent intent = new Intent(this, );
+        startActivity(intent);
     }
 }

@@ -1,6 +1,7 @@
 package com.example.paisadivide;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,7 +26,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MyViewHolder> 
     public MainAdapter(List<Data> ls, Context c) {
         this.c = c;
         this.ls = ls;
-        this.listener= listener;
+        this.listener = listener;
     }
 
     @NonNull
@@ -39,7 +40,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MyViewHolder> 
     @Override
     public void onBindViewHolder(@NonNull MainAdapter.MyViewHolder holder, final int position) {
 
-        final Data currentItem =ls.get(position);
+        final Data currentItem = ls.get(position);
 
         holder.name.setText(currentItem.getName());
         holder.img.setImageDrawable(c.getDrawable(currentItem.getImage()));
@@ -48,6 +49,12 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MyViewHolder> 
             @Override
             public void onClick(View v) {
                 Toast.makeText(c, position + "", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(c,SettleActivity.class);
+
+                i.putExtra("Name", currentItem.getName());
+                i.putExtra("Amount", currentItem.getAmount());
+
+                c.startActivity(i);
             }
         });
 
