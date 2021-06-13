@@ -1,11 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     android:id="@+id/row"
+    android:background="#b0ff57"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_margin="10dp"
     android:layout_width="match_parent"
-    android:layout_height="120dp">
+    android:layout_height="70dp">
+
+    <androidx.cardview.widget.CardView
+        android:elevation="20dp"
+        android:background="#b0ff57"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="#76ff03"
+            android:layout_marginBottom="2dp"
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img"
+                android:padding="5dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_weight="2.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Friend Name"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:text="You Owe Rs. 25"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
 
 </RelativeLayout>

@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
-    android:background="#b0ff57">
+    android:padding="10dp"
+    android:background="#ccff90">
 
     <LinearLayout
         android:weightSum="12"
@@ -39,7 +39,7 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:src="@drawable/ic_launcher_background"
+                    android:src="@drawable/ic_launcher_foreground"
                     android:padding="10dp"
                     android:layout_weight="2"
                     android:layout_width="0dp"
@@ -90,14 +90,15 @@
             android:layout_weight="9">
 
             <RelativeLayout
-                android:background="#76ff03"
+                android:background="#b0ff57"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv"
+                    android:background="#ccff90"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent" />
 
             </RelativeLayout>
 
