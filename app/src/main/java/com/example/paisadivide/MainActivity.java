@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.Manag
     }
 
     public void addSplit(View v){
-        Intent intent = new Intent(this, );
+        Intent intent = new Intent(this, AddSplit.class);
         startActivity(intent);
     }
 }
